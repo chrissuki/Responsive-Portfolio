@@ -36,7 +36,30 @@ h2{
     padding-left: 40px;
     padding-right: 40px;
     margin: 0px 0px 0px 50px;
+
+	position: relative;
+    -webkit-animation: myfirst 3s linear 2s alternate; /* Safari 4.0 - 8.0 */
+    animation: myfirst 3s linear 2s alternate;
+	
 }
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes myfirst {
+    0%   {background-color:#00FFFF; left:0px; top:0px;}
+    25%  {background-color:#008B8B; left:200px; top:0px;}
+    50%  {background-color:#008080; left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:#606060; left:0px; top:0px;}
+}
+
+/* Standard syntax */
+@keyframes myfirst {
+    0%   {background-color:#00FFFF; left:0px; top:0px;}
+    25%  {background-color:#008B8B; left:200px; top:0px;}
+    50%  {background-color:#008080 left:200px; top:200px;}
+    75%  {background-color:green; left:0px; top:200px;}
+    100% {background-color:#606060; left:0px; top:0px;}
+}
+
 nav{
 	float:left;
 	position:absolute;
